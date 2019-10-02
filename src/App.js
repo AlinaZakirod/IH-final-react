@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import { Switch, Route } from "react-router-dom";
 import Signup from "./components/auth/Signup";
+import BoardList from "./components/dashboard/boardList";
 
 class App extends Component {
   constructor(props) {
@@ -18,6 +19,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <BoardList />
         <Switch>
           <Route
             exact
